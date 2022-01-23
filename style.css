@@ -40,9 +40,11 @@ html {
     margin: 0 10px;
     font-size: 1rem;
 }
-.wrapper .score-board img{
+
+.wrapper .score-board img {
     width: 130px;
 }
+
 .wrapper .score-board .score-cont {
     height: 90px;
     width: 100px;
@@ -173,15 +175,17 @@ html {
     height: 35px;
     font-size: 1.5em;
     background-color: rgb(7, 12, 27);
-    color : wheat;
+    color: wheat;
     border-radius: 13px;
     border: 2px solid white;
     cursor: pointer;
 }
-.wrapper .result-cont .result-panel button:active{
-    background-color:  rgba(190, 197, 214, 0.822);
+
+.wrapper .result-cont .result-panel button:active {
+    background-color: rgba(190, 197, 214, 0.822);
     color: black;
 }
+
 .wrapper .result-cont .admin-panel h2,
 .rival-panel h2 {
     padding-bottom: 25px;
@@ -349,7 +353,21 @@ html {
     }
 }
 
-@media (max-width:392px) {
+@media (max-width: 407px) 
+{
+  html{
+      font-size: 7.8px;
+  }
+    .wrapper .score-board img {
+        width: 98px;
+        height: 69px;
+    }
+
+    .wrapper .score-board .score-cont {
+        height: 67px;
+        width: 56px;
+    }
+
     .wrapper .result-cont .result-panel {
         height: 65px;
     }
@@ -362,4 +380,8 @@ html {
         font-size: 2rem;
 
     }
+
+
 }
+
+
