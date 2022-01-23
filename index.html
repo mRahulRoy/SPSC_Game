@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stone paper sccisors</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="score-board">
+            <img src="./images/title.png" alt="">
+            <div class="all-score-cont">
+                <div class="score-cont">
+                    <h1>Your<br>SCORE</h1>
+                    <h2 id="score">0</h2>
+                </div>
+                <div class="score-cont">
+                    <h1>PC<br>SCORE</h1>
+                    <h2 id="pc-score">0</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game buttons -->
+        <div id="game-cont" class="game-buttons-cont">
+            <img src="./images/stone.png" id="stone" class="stone" alt="stone" onclick="stoneFunction(1)">
+            <img src="./images/paper.png" id="paper" class="paper" alt="paper" onclick="paperFunction(2)">
+            <img src="./images/scissors.png" id="scissors" class="scissors" alt="scissors" onclick="scissorsFunction(3)">
+        </div>
+
+        <div id="result-div" class="result-cont">
+            <div class="admin-panel">
+                <h2 id="user-name">Rahul Picked</h2>
+                <img id="admin-picked" class="picked-img" src="./images/stone.png" alt="">
+            </div>
+            <div class="result-panel">
+                <h2 id="winning-status">You Win !</h2>
+                <button id="play-btn" class="play-again-btn">Play Again</button>
+            </div>
+            <div class="rival-panel">
+                <h2>Computer Picked</h2>
+                <img id="rival-choice" class="picked-img" src="./images/paper.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="rules">
+            <h2>RULES</h2>
+        </div>
+
+    </div>
+
+    <script src="power.js"></script>
+</body>
+
+</html>
