@@ -11,11 +11,13 @@ let admin_choice = document.getElementById("admin-picked");
 let score_reflector = document.getElementById("score");
 let play_btn = document.getElementById("play-btn");
 let pc_score = document.getElementById("pc-score");
+let rule_btn = document.getElementById("rule");
 let audioElement = new Audio('./sound/click.mp3');
 
 let win_counter = 0;
 let pc_win_counter = 0;
 user.innerText = users_Name +" Picked";
+
 function randomChoice() {
     min = 1;
     max = 3;
@@ -25,7 +27,9 @@ function randomChoice() {
 play_btn.addEventListener("click", function () {
     game_cont.style.display = "block";
     result_div.style.display = "none";
+   
 });
+
 function stoneFunction(val) {
     audioElement.play();
     console.log("i am stone " + val);
@@ -121,3 +125,14 @@ function scissorsFunction(val) {
 
 }
 
+function ruleShow(){
+    if(rule_btn.style.display== "block"){
+        rule_btn.style.display = "none";
+    }else{
+        rule_btn.style.display = "block";
+    }
+}
+
+body.addEventListener("click",function(){
+    rule_btn.style.display = "none";
+})
